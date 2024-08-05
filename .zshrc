@@ -12,7 +12,7 @@ export USER_NAME=$(whoami)
 alias shutdown='sudo shutdown now'
 alias reboot='sudo reboot now'
 
-#Paths
+# Paths
 export PATH=$PATH:/home/danch/.local/bin
 
 # Load completions
