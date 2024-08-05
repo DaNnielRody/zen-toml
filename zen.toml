@@ -49,7 +49,14 @@ console_title_template = '{{ .Shell }} in {{ .Folder }}'
   type = 'prompt'
   alignment = 'left'
   newline = true
-
+  
+  [[blocks.segments]]
+    type = 'text'
+    style = 'plain'
+    background = 'transparent'
+    foreground = 'magenta'
+    template = 'danch ' 
+  
   [[blocks.segments]]
     type = 'text'
     style = 'plain'
