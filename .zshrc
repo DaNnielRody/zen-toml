@@ -5,13 +5,6 @@
 export ZSH="$HOME/.oh-my-zsh"
 export FUNCNEST=1000
 
-# Which plugins would you like to load?
-# Standard plugins can be found in $ZSH/plugins/
-# Custom plugins may be added to $ZSH_CUSTOM/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-plugins=(git sudo history encode64 copypath)
-
 # Apps aliases
 alias obs='/usr/bin/obs'
 alias edge='/usr/bin/microsoft-edge-stable'
@@ -25,10 +18,11 @@ alias shutdown='sudo shutdown now'
 alias reboot='sudo reboot now'
 
 #Package Manager aliases
-alias dnfi='sudo dnf install -y'
-alias dnfu='sudo dnf update -y'
-alias dnfr='sudo dnf remove'
-alias dnfc='sudo dnf clean all'
+# Same as dnf snippet:
+#alias dnfi='sudo dnf install -y'
+#alias dnfu='sudo dnf update -y'
+#alias dnfr='sudo dnf remove'
+#alias dnfc='sudo dnf clean all'
 
 #Paths
 export PATH=$PATH:/home/danch/.local/bin
@@ -64,6 +58,21 @@ zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
+zinit light hlissner/zsh-autopair
+zinit light MichaelAquilina/zsh-you-should-use
+zinit light junegunn/fzf
+
+# Add snippets
+zinit snippet OMZP::git
+zinit snippet OMZP::sudo
+zinit snippet OMZP::history
+zinit snippet OMZP::encode64
+zinit snippet OMZP::fzf
+zinit snippet OMZP::copypath
+zinit snippet OMZP::command-not-found
+zinit snippet OMZP::docker
+zinit snippet OMZP::dnf
+zinit snippet OMZP::aliases
 
 # History
 HISTSIZE=5000
