@@ -25,6 +25,11 @@ To install Zinit, run the following command:
 bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
 ```
 
+Update Zinit:
+```
+zinit self-update
+```
+
 ### 2. Install Zsh
 Install Zsh on your Linux distribution (choose the appropriate command for your system):
 
