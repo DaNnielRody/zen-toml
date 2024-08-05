@@ -55,7 +55,7 @@ console_title_template = '{{ .Shell }} in {{ .Folder }}'
     style = 'plain'
     background = 'transparent'
     foreground = 'magenta'
-    template = 'danch ' 
+    template = '{{ .Env.USER_NAME }} ' 
   
   [[blocks.segments]]
     type = 'text'

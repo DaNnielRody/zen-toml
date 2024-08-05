@@ -5,6 +5,9 @@
 export ZSH="$HOME/.oh-my-zsh"
 export FUNCNEST=1000
 
+# Path to use my user as a variable
+export USER_NAME=$(whoami)
+
 # Apps aliases
 alias obs='/usr/bin/obs'
 alias edge='/usr/bin/microsoft-edge-stable'
