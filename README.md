@@ -31,14 +31,42 @@ Make Zsh your default shell by running:
 chsh -s $(which zsh)
 ```
 
-### 4. Copy Configuration File
+### 4. Create Configuration Directory for Oh My Posh
+Create the configuration directory for Oh My Posh:
+
+```
+mkdir -p ~/.config/ohmyposh
+```
+
+### 5. Navigate to Configuration Directory
+Navigate to the configuration directory:
+
+```
+cd ~/.config/ohmyposh/
+```
+
+### 6. Export Base Configuration
+Export the base configuration for Oh My Posh:
+
+```
+oh-my-posh config export --output ./base.json
+```
+
+### 7. Convert Configuration to TOML
+Convert the base configuration to TOML format and save it to the configuration directory:
+
+```
+oh-my-posh config export --format toml --output ~/.config/ohmyposh/zen.toml
+```
+
+### 8. Copy Configuration File
 Copy the .zshrc configuration file from this repository to your home directory:
 
 ```
 cp ~/zen-toml/.zshrc ~/
 ```
 
-### 5. Start a New Zsh Session
+### 9. Start a New Zsh Session
 To apply the changes and start using Zsh with the new configuration, open a new terminal session or run:
 
 ```
