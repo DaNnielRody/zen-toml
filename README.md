@@ -18,10 +18,32 @@ curl -s https://ohmyposh.dev/install.sh | bash -s
 ```
 
 ### 2. Install Zsh
-Install Zsh on Fedora using the following command:
+Install Zsh on your Linux distribution (choose the appropriate command for your system):
 
+
+Fedora:
 ```
 sudo dnf install zsh
+```
+Debian/Ubuntu/WSL (Windows):
+```
+sudo apt install zsh
+```
+Fedora:
+```
+sudo dnf install zsh
+```
+Arch Linux (and derivatives):
+```
+sudo pacman -S zsh
+```
+openSUSE:
+```
+sudo zypper install zsh
+```
+macOS:
+```
+brew install zsh
 ```
 
 ### 3. Set Zsh as Default Shell
