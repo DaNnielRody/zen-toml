@@ -8,18 +8,7 @@ export FUNCNEST=1000
 # Path to use my user as a variable
 export USER_NAME=$(whoami)
 
-# Apps aliases
-alias obs='/usr/bin/obs'
-alias edge='/usr/bin/microsoft-edge-stable'
-alias discord='/usr/bin/Discord'
-alias telegram='/usr/bin/telegram-desktop'
-
-# Personal .zshrc
-if [ -f ~/.zshrc_personal ]; then
-  source ~/.zshrc_personal
-fi 
-
-#System aliases
+# System aliases
 alias shutdown='sudo shutdown now'
 alias reboot='sudo reboot now'
 
@@ -71,6 +60,11 @@ zinit snippet OMZP::copypath
 zinit snippet OMZP::command-not-found
 zinit snippet OMZP::docker
 zinit snippet OMZP::aliases
+
+# Personal .zshrc
+if [ -f ~/.zshrc_personal ]; then
+  source ~/.zshrc_personal
+fi
 
 # History
 HISTSIZE=5000
