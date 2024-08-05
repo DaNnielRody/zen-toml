@@ -1,20 +1,28 @@
 # Zen Toml Configuration
 
-This repository contains my personalized configuration for Zsh and Oh My Posh.
+This repository contains my personalized configuration for Zsh with Zinit and Oh My Posh.
 
 ## Configuration Steps
 
 For detailed documentation on configuring Oh My Posh, visit:
 [Oh My Posh Documentation](https://ohmyposh.dev/docs/)
 
+For detailed documentation on configuring Zinit, visit:
+[Zinit Documentation](https://github.com/zdharma-continuum/zinit)
+
 ## Installation Instructions
 
-### 1. Install Oh My Posh
+### 1. Install Oh My Posh and Zinit
 
 To install Oh My Posh, run the following command:
 
 ```
 curl -s https://ohmyposh.dev/install.sh | bash -s
+```
+
+To install Zinit, run the following command:
+```
+bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
 ```
 
 ### 2. Install Zsh
