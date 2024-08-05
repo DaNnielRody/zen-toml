@@ -13,19 +13,15 @@ alias obs='/usr/bin/obs'
 alias edge='/usr/bin/microsoft-edge-stable'
 alias discord='/usr/bin/Discord'
 alias telegram='/usr/bin/telegram-desktop'
-alias idea='/home/danch/Downloads/idea-IU-241.18034.62/bin/idea.sh'
-alias rider='/home/danch/Downloads/JetBrains\ Rider-2024.1.4/bin/rider.sh'
+
+# Personal .zshrc
+if [ -f ~/.zshrc_personal ]; then
+  source ~/.zshrc_personal
+fi 
 
 #System aliases
 alias shutdown='sudo shutdown now'
 alias reboot='sudo reboot now'
-
-#Package Manager aliases
-# Same as dnf snippet:
-#alias dnfi='sudo dnf install -y'
-#alias dnfu='sudo dnf update -y'
-#alias dnfr='sudo dnf remove'
-#alias dnfc='sudo dnf clean all'
 
 #Paths
 export PATH=$PATH:/home/danch/.local/bin
@@ -74,7 +70,6 @@ zinit snippet OMZP::fzf
 zinit snippet OMZP::copypath
 zinit snippet OMZP::command-not-found
 zinit snippet OMZP::docker
-zinit snippet OMZP::dnf
 zinit snippet OMZP::aliases
 
 # History
