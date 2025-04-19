@@ -2,18 +2,13 @@
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
 # Path to your Oh My Zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
 export FUNCNEST=1000
-
-# Path to use my user as a variable
+export PATH="$HOME/.local/bin:$PATH"
 export USER_NAME=$(whoami)
 
 # System aliases
 alias shutdown='sudo shutdown now'
 alias reboot='sudo reboot now'
-
-# Paths
-export PATH=$PATH:/home/danch/.local/bin
 
 # Load completions
 autoload -Uz compinit && compinit
@@ -49,6 +44,9 @@ zinit light Aloxaf/fzf-tab
 zinit light hlissner/zsh-autopair
 zinit light MichaelAquilina/zsh-you-should-use
 zinit light junegunn/fzf
+
+# deixe isso logo no início do arquivo, antes dos "zinit snippet"
+[[ -d ~/.cache/zinit/completions ]] || mkdir -p ~/.cache/zinit/completions
 
 # Add snippets
 zinit snippet OMZP::git
@@ -90,8 +88,4 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/zen.toml)"
 
 # Shell integration
-eval "$(fzf --zsh)"
 eval "$(zoxide init zsh)"
-
-# End Configuration
-source $ZSH/oh-my-zsh.sh
